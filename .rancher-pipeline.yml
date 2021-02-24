@@ -63,6 +63,7 @@ stages:
       branch:
         include:
           - master
+          - develop
 
 - name: Wait db deployment
   steps:
@@ -86,6 +87,7 @@ stages:
       branch:
         include:
           - master
+          - develop
 
 - name: Deploy app-web
   steps:
