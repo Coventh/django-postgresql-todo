@@ -76,7 +76,6 @@ stages:
     branch:
       include:
       - master
-      - develop
 - name: Deploy--Wait DB deployment
   steps:
   - env:
@@ -98,7 +97,6 @@ stages:
     branch:
       include:
       - master
-      - develop
 - name: Deploy--Setting Web environment variables
   steps:
   - envFrom:
@@ -121,7 +119,7 @@ stages:
     branch:
       include:
       - master
-- name: Deploy--Web
+- name: Deploy--Web including DB config
   steps:
   - applyAppConfig:
       answers:
