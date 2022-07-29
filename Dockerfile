@@ -1,4 +1,4 @@
-FROM dockerhub/library/python:3.7
+FROM dockerhub/library/python:3.7-alpine
 # FROM python:3.7
 RUN pip install django==3.1.7 psycopg2==2.8.6
 
